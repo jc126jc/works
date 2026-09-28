@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>作品集</title>
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #12110f;
+    --fg: #ece8e1;
+    --line: #2a2824;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  header, main {
+    width: min(920px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+  header { padding: 56px 0 8px; }
+  h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 560;
+    letter-spacing: 0.12em;
+  }
+  article {
+    padding: 32px 0 36px;
+    border-top: 1px solid var(--line);
+  }
+  article:first-child { border-top: 0; }
+  h2 {
+    margin: 0 0 16px;
+    font-size: 18px;
+    font-weight: 560;
+  }
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #000;
+  }
+  video.portrait { width: min(380px, 100%); }
+</style>
+</head>
+<body>
+<header>
+  <h1>作品集</h1>
+</header>
+<main>
+  <article>
+    <h2>场景控制</h2>
+    <video class="wide" controls preload="metadata" playsinline src="视频/场景控制.mp4"></video>
+  </article>
+  <article>
+    <h2>短片生成</h2>
+    <video class="wide" controls preload="metadata" playsinline src="视频/短片生成.mp4"></video>
+  </article>
+  <article>
+    <h2>动作控制</h2>
+    <video class="wide" controls preload="metadata" playsinline src="视频/动作控制.mp4"></video>
+  </article>
+  <article>
+    <h2>情绪控制</h2>
+    <video class="portrait" controls preload="metadata" playsinline src="视频/情绪控制.mp4"></video>
+  </article>
+</main>
+</body>
+</html>
